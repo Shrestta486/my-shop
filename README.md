@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # my_shop
 
 A new Flutter project.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# my-shop
+Mobile shopping app built with Flutter. Includes user authentication, product browsing, cart functionality, and checkout.
+>>>>>>> b4ba43f580ed9fe21f3e6b51bbdf0d9ff13d3626
