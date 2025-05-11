@@ -1,21 +1,57 @@
-<<<<<<< HEAD
-# my_shop
+# My-Shop: Simple E-Commerce Flutter App
 
-A new Flutter project.
+This is a basic Flutter e-commerce application using the [Fake Store API](https://fakestoreapi.com/) to demonstrate core e-commerce features.
+The app includes a splash screen, login screen, category dashboard, product details screen, and cart screen.
 
-## Getting Started
+##  Features
 
-This project is a starting point for a Flutter application.
+###  Splash Screen
+- Displays the app logo and name with a fade-in animation.
+- Navigates to the login screen after a 3-second delay.
 
-A few resources to get you started if this is your first Flutter project:
+###  Login Screen
+- Email and password input fields with validation.
+- Validates required fields and email format.
+- Simulates login and navigates to the dashboard.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+###  Dashboard (Category View)
+- Fetches categories dynamically from the [Fake Store API](https://fakestoreapi.com/).
+- Displays categories in a grid view.
+- On tapping a category, fetches and displays products in that category.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# my-shop
-Mobile shopping app built with Flutter. Includes user authentication, product browsing, cart functionality, and checkout.
->>>>>>> b4ba43f580ed9fe21f3e6b51bbdf0d9ff13d3626
+### Product Details Screen
+- Shows product image, title, description, and price.
+- "Add to Cart" functionality.
+
+### Cart Screen
+- Displays list of added products.
+- Allows quantity increment/decrement.
+- Remove items from the cart.
+- Displays total price and a placeholder "Checkout" button.
+
+---
+
+##  Technologies Used
+- **Flutter**
+- **Dart**
+- **HTTP** package for API calls
+- **Provider** or simple `setState` for state management
+- **Fake Store API** for product data
+
+
+
+## API Used
+
+- **Base URL:** `https://fakestoreapi.com/`
+- Endpoints:
+  - `/products/categories` – Get product categories
+  - `/products/category/{category}` – Get products by category
+  - `/products/{id}` – Get product details
+    
+## Navigation Flow
+
+1. **Splash Screen** → 2. **Login Screen** → 3. **Dashboard** → 4. **Product List** → 5. **Product Details** → 6. **Cart**
+
+Navigation is handled using **named routes**.
+
+
